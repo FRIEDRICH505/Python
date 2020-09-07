@@ -1,9 +1,9 @@
 class Car:
-    """A simple attempt to represent a car."""
-    def __init__(self, make, model, year):
+    def __init__(self, make, model, year,manufacturer):
         self.make = make
         self.model = model
         self.year = year
+        self.manufacturer = manufacturer
         self.odometer_reading = 0
     def get_descriptive_name(self):
         long_name = f"{self.year} {self.manufacturer} {self.model}"
@@ -18,9 +18,7 @@ class Car:
         def increment_odometer(self, miles):
             self.odometer_reading += miles
 class ElectricCar(Car):
-    """Represent aspects of a car, specific to electric vehicles."""
-    def __init__(self, make, model, year):
-        """Initialize attributes of the parent class."""
-    super().__init__(make, model, year)
-my_tesla = ElectricCar('tesla', 'model s', 2019)
+        def __init__(self, make, model, year,manufacturer):
+            super().__init__(make, model, year, manufacturer)
+my_tesla = ElectricCar('tesla', 'model s', 2019, 'tesla')
 print(my_tesla.get_descriptive_name())

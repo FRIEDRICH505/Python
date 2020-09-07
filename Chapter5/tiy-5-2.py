@@ -1,12 +1,18 @@
-tennis = 'racket'
-tennis == 'roger'
-tennis = 'novak'
-tennis == 'novak'
-car = 'Audi'
-car == 'audi'
+pizza = 'capricosa'
+print("Is pizza = 'capricosa'? I predict True")
+print(pizza == 'capricosa')
+print("Is pizza != 'capricosa'? I predict False")
+print(pizza != 'capricosa')
 
-car = 'Audi'
-car.lower() == 'audi'
-age_0 = 22
-age_1 = 18
-age_0 >= 21 and age_1 >= 21
+car = 'bmw'
+print("Is your car == 'bmw'? I predict True")
+print(car == 'bmw')
+
+car == 'BMW'
+print("Is your car == 'BMW'? I predict True")
+print(car.lower() == 'bmw')
+
+age = 18
+print(age == 22)
+print(age == 18)
+print(age <= 21)

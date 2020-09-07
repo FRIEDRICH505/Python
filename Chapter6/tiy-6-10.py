@@ -1,10 +1,10 @@
-number = {
-'fred': ['44', '9'],
-'sharon': ['35', '11'],
-'sanet': ['49', '88'],
-'roger': ['38']
+favorite_numbers = {
+    'mandy': [42, 17],
+    'micah': [42, 39, 56],
+    'gus': [7, 12],
     }
-for name, numbers in number.items():
-    print(f"\n{name.title()}'s favorite numbers are:")
+
+for name, numbers in favorite_numbers.items():
+    print(f"\n{name.title()} likes the following numbers:")
     for number in numbers:
-        print(f"\t{number.title()}")
+        print(f"  {number}")

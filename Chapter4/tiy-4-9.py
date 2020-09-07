@@ -1,2 +1,2 @@
-cube = [value**3 for value in range(1, 11)]
-print(cube[0:10])
+cubes = [ value ** 3 for value in range(1, 11)]
+print(cubes)

@@ -1,3 +1,7 @@
-cube = [value**3 for value in range(1, 11)]
-print(cube)
-print(cube[0:10])
+cubes = []
+for value in range(1, 11):
+    cube = value ** 3
+    cubes.append(cube)
+
+for cube in cubes:
+    print(cube)

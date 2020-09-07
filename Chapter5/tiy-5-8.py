@@ -1,6 +1,11 @@
-user_names = ['sanet', 'sharon', 'fred', 'admin']
-for user_names in user_names:
-    if user_names in user_names:
-        print(f"Hallo {user_names} thank you for loggin in.")
-    else:
-        print(f"You are logged in as admin")
+usernames = ['test1', 'test2', 'test3', 'test4', 'admin']
+
+if usernames:
+    for username in usernames:
+        if username == 'admin':
+            print("Hello Admin, would you like to see a status report?")
+        else:
+            print("Hello " + username.title() +
+                    ", thank you for logging in again.")
+else:
+    print("We need to find some users!")

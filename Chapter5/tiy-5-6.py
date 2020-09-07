@@ -1,13 +1,16 @@
-age = 70
-if age < 2:
-    print("You are still a baby.")
-elif age < 4:
-    print("You are a toddler.")
-elif age < 13:
-    print("You are a kid.")
-elif age < 20:
-    print("You are a teenager.")
-elif age < 65:
-    print("You are an adult.")
+person_age = 23
+
+if person_age < 2:
+    person = 'baby'
+elif person_age >= 2 and person_age < 4:
+    person = 'toddler'
+elif person_age >= 4 and person_age < 13:
+    person = 'kid'
+elif person_age >= 13 and person_age < 20:
+    person = 'teenager'
+elif person_age >= 20 and person_age < 65:
+    person = 'adult'
 else:
-    print("You are an elder.")
+    person = 'elder'
+
+print(person)

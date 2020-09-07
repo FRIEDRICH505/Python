@@ -1,9 +1,13 @@
-name = "Friedrich Brandt"
-print("Friedrich:\n\tPython\n\tC\n\tBrandt")
+name = "\tEric Matthes\n"
 
-whitespace = ' friedrich '
-whitespace = whitespace.rstrip()
-whitespace = whitespace.lstrip()
-whitespace = whitespace.strip()
+print("Unmodified:")
+print(name)
 
+print("\nUsing lstrip():")
+print(name.lstrip())
 
+print("\nUsing rstrip():")
+print(name.rstrip())
+
+print("\nUsing strip():")
+print(name.strip())
